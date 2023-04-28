@@ -1,0 +1,160 @@
+<!-- exercise from https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Structuring_planet_data -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Table template</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Planets Data</h1>
+    <table>
+        <caption>Data about the planets of our solar system (Planetary facts taken from <a
+                href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
+        </caption>
+        <colgroup>
+            <!-- <colgroup> tag specifies a group of one or more columns in a table for formatting. 
+          Must include blank <col> elements or styles will be applied to fist column  -->
+            <col span="2">
+            <col style="border: 2px solid black">
+            <col span="9">
+        </colgroup>
+        <thead>
+            <th colspan="2"></th>
+            <th scope="col" class="outline" id="top">Name</th>
+            <th scope="col">Mass (10<sup>24</sup>kg)</th>
+            <th scope="col">Diameter (km)</th>
+            <th scope="col">Density (kg/m<sup>3</sup>)</th>
+            <th scope="col">Gravity (m/s<sup>2</sup>)</th>
+            <th scope="col">Length of day (hours)</th>
+            <th scope="col">Distance from Sun (10<sup>6</sup>km)</th>
+            <th scope="col">Mean temperature (°C)</th>
+            <th scope="col">Number of moons</th>
+            <th scope="col">Notes</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" colspan="2" rowspan="4">Terrestrial planets</th>
+                <th scope="row" class="outline">Mercury</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>Closest to the Sun</td>
+            </tr>
+            <tr>
+                <th scope="row" class="outline">Venus</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row" class="outline">Earth</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>Our world</td>
+            </tr>
+            <tr>
+                <th scope="row" class="outline">Mars</th>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>The red planet</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="4">Jovian planets</th>
+                <th scope="rowgroup" rowspan="2">Gas giants</th>
+                <th scope="row" class="outline">Jupiter</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row" class="outline">Saturn</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="2">Ice giants</th>
+                <th scope="row" class="outline">Uranus</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row" class="outline">Neptune</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="2">Dwarf planets</th>
+                <th scope="row" class="outline" id="bottom">Pluto</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>Declassified as a planet in 2006, but this <a
+                        href="http://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains
+                        controversial</a>.</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
